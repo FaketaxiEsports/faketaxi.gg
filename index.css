@@ -6,16 +6,29 @@ body, h1,h2,h3,h4,h5,h6 {
     margin-bottom: 12px
 }
 /* Set the width of the sidebar to 120px */
-.w3-sidebar {
-    width: 120px;background: #757575;
+.w3-sidebar{
+    height:100%;
+    width:120px;
+    background: #757575;
+    position:fixed !important;
+    z-index:1;
+    overflow:auto;
 }
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {
     margin-left: 120px
 }
+.faximg {
+    width:500px;
+    height:100px;
+}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {
     #main {
         margin-left: 0
+    }
+  
+    .w3-bar-item {
+        width:25% !important;
     }
 }
