@@ -2,6 +2,18 @@
 body, h1,h2,h3,h4,h5,h6 {
     font-family: "Montserrat", sans-serif
 }
+titleh3 {
+    color: white;
+    font-size: 36px;
+}
+hr {
+    border:0;
+    border-top:1px solid #eee;
+    margin:5px 0;
+    box-sizing:content-box;
+    height:10;
+    overflow:visible;
+}
 .w3-row-padding img {
     margin-bottom: 12px
 }
@@ -13,6 +25,147 @@ body, h1,h2,h3,h4,h5,h6 {
     position:fixed !important;
     z-index:1;
     overflow:auto;
+}
+.w3-white {
+    color:#000 !important;
+    background-color:#fff !important;
+}
+.w3-padding-32 {
+    padding-top:32px!important;
+    padding-bottom:32px!important;
+}
+.w3-bar-block {
+    width: 120px;
+    /* min-width: 100%; */
+    text-align: left;
+    /* padding: 8px 16px; */
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+}
+.w3-medium {
+    font-size:15px!important;
+}
+.w3-xlarge {
+    font-size:24px!important;
+}
+.w3-text-grey {
+    color:#757575!important;
+}
+.w3-jumbo {
+    font-size:64px!important;
+    color: #FFF;
+}
+.w3-hover-text-green {
+    color:#4CAF50!important;
+}
+.w3-content {
+    margin-left:auto;
+    margin-right:auto;
+    max-width:980px;
+}
+.w3-container {
+    content:"";
+    display:table;
+    clear:both;
+    padding:0.01em 16px;
+}
+.w3-button {
+    width: 100%;
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:left;
+    cursor:pointer;
+    white-space:nowrap;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    background-color:#ccc;
+    color:#000;
+    white-space: normal;
+}
+.w3-small {
+    font-size:12px;
+}
+.w3-hide-small {
+    display:block;
+}
+.w3-hide-medium {
+    display:none!important;
+}
+.w3-hide-large {
+    display:none!important;
+}
+.w3-opacity {
+    opacity:0.60;
+}
+.w3-hover-opacity-off {
+    opacity:1;
+}
+.w3-center {
+    display:inline-block;
+    width:auto;
+    text-align:center !important;
+}
+.w3-bar-item {
+    padding:8px 16px;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0;
+    width:100%;
+    text-align:center;
+    white-space:normal;
+    float:none;
+    outline:0;
+}
+.w3-padding-large {
+    padding:12px 24px!important;
+}
+.w3-top {
+    position:fixed;
+    width:100%;
+    z-index:1;
+    top:0;
+}
+.w3-black {
+    color:#fff!important;
+    background-color:#000!important;
+}
+.w3-xxlarge {
+    font-size:36px!important;
+}
+.parallax-effect {
+	/*By the guys at 
+	https://www.w3docs.com/snippets/css/how-to-create-a-parallax-scrolling-effect.html *
+	I had to look around a little to find a fully compatible parallax scroller for all browsers.
+	note: modified*/
+	background-image: url("https://i.imgur.com/DSZOKnt.png");
+	min-height: 600px; /*One thing I wish I could change is make this responsive, but percentages dont work.*/
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed; /*actual parallax command */
+	background-position: center; /*centers background*/
+	background-repeat: no-repeat; /*no tiling if small*/
+	background-size: cover; /*if res is low zoom it in to cover area*/
+}
+/* for text in the middle of photo
+from w3cschools*/
+.centeredtext {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
 }
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {
@@ -55,5 +208,16 @@ body, h1,h2,h3,h4,h5,h6 {
         width: 65%;
         height: auto;
     }
+    .w3-bar-block {
+        width: 100%;
+        min-width: 100%;
+        text-align: left;
+        padding: 8px 16px;
+        border:none;
+        white-space:normal;
+        float:none;
+        outline:0;
+    }
+    /*
 }
 
