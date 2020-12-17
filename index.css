@@ -195,6 +195,11 @@ from w3cschools*/
     grid-gap: 1em;
     grid-template-areas: 'main academy';
 }
+@media only screen and (max-width: 992px) {
+    .w3-sidebar {
+        display:none;
+    }
+}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {
     #main {
@@ -217,6 +222,9 @@ from w3cschools*/
         white-space:normal;
         float:none;
         outline:0;
+    }
+    .w3-sidebar {
+        display:block;
     }
     /*
 }
