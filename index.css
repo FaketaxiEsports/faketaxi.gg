@@ -22,6 +22,26 @@ body, h1,h2,h3,h4,h5,h6 {
     width:500px;
     height:100px;
 }
+.main {
+	grid-area: main;
+}
+.academy {
+	margin-top: 1%;
+	grid-area: academy;
+	border-style: none solid none none;
+	border-width: 2px;
+	border-color: #ffffff;
+	/* alt is border: 2px none solid none none #ffffff but I like the readability*/
+}
+.wrapper {
+	margin-top: 1%;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    grid-template-areas: 'main academy';
+}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {
     #main {
