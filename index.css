@@ -167,17 +167,6 @@ from w3cschools*/
     height: 30px;
     margin-left: 50px;
 }
-.starter {
-    grid-area: main;
-    margin-top: 1%;
-    border-style: none solid none none;
-	border-width: 2px;
-	border-color: #ffffff;
-	/* alt is border: 2px none solid none none #ffffff but I like the readability*/
-}
-.academy {
-	grid-area: academy;
-}
 footer {
     background-color: #000;
     width: 100%;
@@ -189,6 +178,17 @@ footer {
 .footer-text {
     margin-left: 50px;
     font-size: small;
+}
+.starter {
+    grid-area: main;
+    margin-top: 1%;
+    border-style: none solid none none;
+	border-width: 2px;
+	border-color: #ffffff;
+	/* alt is border: 2px none solid none none #ffffff but I like the readability*/
+}
+.academy {
+	grid-area: academy;
 }
 .wrapper {
 	margin-top: 1%;
@@ -221,6 +221,10 @@ footer {
         white-space:normal;
         float:none;
         outline:0;
+    }
+    .wrapper {
+        grid-template-areas: 'main'
+                            'academy';
     }
 }
 
