@@ -110,6 +110,7 @@ hr {
     text-align:center !important;
 }
 .w3-bar-item {
+    padding:0px;
     width:auto;
     border:none;
     display:inline-block;
