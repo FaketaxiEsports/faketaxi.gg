@@ -1,10 +1,6 @@
-  
 body, h1,h2,h3,h4,h5,h6 {
-    font-family: "Montserrat", sans-serif
-}
-titleh3 {
-    color: white;
-    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    margin:0 auto;
 }
 hr {
     border:0;
@@ -14,21 +10,27 @@ hr {
     height:10;
     overflow:visible;
 }
+.titleh3 {
+    color: white;
+}
 .w3-row-padding img {
     margin-bottom: 12px
 }
 /* Set the width of the sidebar to 120px */
-.w3-sidebar{
-    height:100%;
-    width:120px;
-    background: #757575;
+.topnav{
+    height:50px;
+    width:100%;
+    background-color: #000;
     position:fixed !important;
     z-index:1;
-    overflow:auto;
+    overflow:hidden;
+    margin: auto;
 }
 .w3-white {
     color:#000 !important;
     background-color:#fff !important;
+    margin-left: none;
+    margin-right: auto;
 }
 .w3-padding-32 {
     padding-top:32px!important;
@@ -72,26 +74,16 @@ hr {
     padding:0.01em 16px;
 }
 .w3-button {
-    width: 100%;
+    width: 100px;
     border:none;
-    display:inline-block;
-    padding:8px 16px;
+    display:inline;
     vertical-align:middle;
-    overflow:hidden;
     text-decoration:none;
     color:inherit;
-    background-color:inherit;
-    text-align:left;
+    text-align:center;
     cursor:pointer;
-    white-space:nowrap;
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -khtml-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
-    background-color:#ccc;
-    color:#000;
+    background-color: transparent;
+    color:#bbb;
     white-space: normal;
 }
 .w3-small {
@@ -118,14 +110,11 @@ hr {
     text-align:center !important;
 }
 .w3-bar-item {
-    padding:8px 16px;
     width:auto;
     border:none;
-    display:block;
-    outline:0;
-    width:100%;
+    display:inline-block;
+    width:150px;
     text-align:center;
-    white-space:normal;
     float:none;
     outline:0;
 }
@@ -138,12 +127,12 @@ hr {
     z-index:1;
     top:0;
 }
-.w3-black {
+.w3-button:hover {
     color:#fff!important;
-    background-color:#000!important;
+    background-color:rgba(0, 0, 0, 0.267)!important;
 }
 .w3-xxlarge {
-    font-size:36px!important;
+    font-size:24px!important;
 }
 .parallax-effect {
 	/*By the guys at 
@@ -167,13 +156,15 @@ from w3cschools*/
 	left: 50%;
     transform: translate(-50%, -50%);
 }
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {
-    margin-left: 120px
-}
 .faximg {
     width:500px;
     height:100px;
+    margin-top: 50px;
+}
+.faximg-small {
+    width: 150px;
+    height: 30px;
+    margin-left: 50px;
 }
 .starter {
     grid-area: main;
@@ -185,6 +176,18 @@ from w3cschools*/
 }
 .academy {
 	grid-area: academy;
+}
+footer {
+    background-color: #000;
+    width: 100%;
+    border:none;
+    vertical-align:middle;
+    z-index: 2;
+    position: bottom;
+}
+.footer-text {
+    margin-left: 50px;
+    font-size: small;
 }
 .wrapper {
 	margin-top: 1%;
@@ -218,6 +221,5 @@ from w3cschools*/
         float:none;
         outline:0;
     }
-    /*
 }
 
