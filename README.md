@@ -8,4 +8,4 @@ Or https://faketaxi.gg/#
 <br>
 <br>
 <hr>
-Contributors: Drew Downing, Chris Bo
+Contributors: Drew Downing, Chris Bo, Theirry Martineau, Chris Bellando
